@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADIEL </title>
+<style>
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ffdde1, #690a22);
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;   /* show full image */
+  background: rgba(255, 255, 255, 0.2); /* nice frame */
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+a {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #ff4d88;
+  text-decoration: none;
+  border-radius: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Adi💗</h1>
+
+<div class="gallery">
+  <img src="1.jpg">
+  <img src="2.jpg">
+  <img src="3.jpg">
+  <img src="4.jpg">
+</div>
+
+<a href="landing.html">⬅ Back</a>
+
+</body>
+</html>

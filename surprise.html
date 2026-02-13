@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surprise 🌹</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdde1, #690a22);
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #c9184a;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#hiddenText {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+  <h1>Click Below 🌹</h1>
+  <p>Guess it correctly and I'll have a surprise for you.</p>
+
+  <button onclick="enterPassword()">Reveal Surprise</button>
+  <button onclick="showHint()">Hint 💡</button>
+
+  <p id="hiddenText"></p>
+  <br>
+  <a href="landing.html" style="color:white;">⬅ Back</a>
+</div>
+
+<script>
+const password = "BABI";
+const hint = "It’s our endearment💕";
+
+function enterPassword() {
+  const userInput = prompt("Enter the password to reveal the surprise:");
+
+  if (userInput === null) {
+    return; // user pressed cancel
+  }
+
+  if (userInput.toUpperCase() === password) {
+    alert("A little appreciation for my loving and understanding girlfriend. Thankyou for loving me unconditionally, I always appreciate your efforts and patience at sa love na binibigay mo sakin, ILOVEYOU ALWAYS BABI 🤍");
+  } else {
+    alert("SO SINO KATAWAGAN MO NAN????");
+  }
+}
+
+function showHint() {
+  alert("Hint: " + hint);
+}
+</script>
+
+</body>
+</html>
